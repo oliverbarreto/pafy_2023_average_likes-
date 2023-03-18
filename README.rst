@@ -14,6 +14,13 @@
     :alt: Wheel Status
 
 
+Fix for YouTube ERROR: average_rating
+--------
+- As of March 2023 PAFY is broken since it crashes when initializing because of being not able to have         # self._rating = self._ydl_info['average_rating']. Removed assignment from PAFY code code to get rid of error
+New Changes from Youtube that is not providing self._rating = self._ydl_info['average_rating']
+ 
+
+
 Features
 --------
 
